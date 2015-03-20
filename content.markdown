@@ -8,7 +8,7 @@
 
 ## Basic formatting/syntax
 * Syntax - a set of rules for the ordering of words to create meaning
-### Try this example in a text editor!
+* Try this example in a text editor!
 ```
 <!DOCTYPE html> - Tells your browser what type of file to expect
 <html> - Marks the start of the HTML
