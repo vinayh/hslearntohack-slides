@@ -1,9 +1,9 @@
 # Let's talk about HTML
 
 ## HyperText Markup Language
-* Markup language - a way of annotating a document so that it is distinguishable from text
+* Markup language - a way of annotating a document so that it is distinguishable from text  
  (eg. marking up paper documents)
-* Most recent version is HTML5
+* Most recent version is HTML5  
  Main goal was to add support for multimedia (more efficient YouTube videos!)
 
 ## Basic formatting/syntax
@@ -25,3 +25,26 @@
 </html> - Marks the end of the HTML
 ```
 
+## The <canvas> tag
+* To draw the snake game in the HTML file, we will need to use a `<canvas>` tag
+* The tag is a container, or placeholder, for graphics that are drawn using your JavaScript code
+* An example is as follows:
+```
+<canvas id="gameboard" style="border:1px solid #000000;">
+</canvas>
+```
+
+## JavaScript in HTML
+* JavaScript is a programming language for the web, used to program the behavior of the web
+* The `<script>` tag is used to denote client-side (runs in your browser) JavaScript
+* We can type the code within the `<script>` tags, as below:
+```
+<script>
+\\ YOUR CODE HERE
+</script>
+```
+* However, let's link the file (snake.js) into the HTML file to keep things neat and tidy, as below:
+```
+<script type="text/javascript" src="snake.js">
+</script>
+```
