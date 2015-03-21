@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning HTML and JavaScript</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# Let's talk about HTML
+
+---
+
+## HyperText Markup Language
+* Markup language - a way of annotating a document so that it is distinguishable from text  
+ (eg. marking up paper documents)
+* Most recent version is HTML5  
+ Main goal was to add support for multimedia (more efficient YouTube videos!)
+
+## Basic formatting/syntax
+* Syntax - a set of rules for the ordering of words to create meaning
+
+---
+
+## Try this example in a text editor!
+```
+<!DOCTYPE html> - Tells your browser what type of file to expect
+<html> - Marks the start of the HTML
+<head> - Starts the header of the document
+    <title>Your Page Title</title> - Sets the title (displayed in browser)
+</head> - Ends the header
+<body> - Starts the body
+    <h1>Heading 1</h1> - Sets a heading of type 1 (largest)
+    <p>This is a paragraph</p> - Sets paragraph text
+</body> - Ends the body
+</html> - Marks the end of the HTML
+```
+
+---
+
+## The `<canvas>` tag
+* To draw the snake game in the HTML file, we will need to use a `<canvas>` tag
+* The tag is a container, or placeholder, for graphics that are drawn using your JavaScript code
+
+* An example is as follows:
+```
+<canvas id="gameboard" style="border:1px solid #000000;">
+</canvas>
+```
+
+---
+
+## JavaScript in HTML
+* JavaScript is a programming language for the web, used to program the behavior of the web
+* The `<script>` tag is used to denote client-side (runs in your browser) JavaScript
+
+* We can type the code within the `<script>` tags, as below:
+```
+<script>
+\\ YOUR CODE HERE
+</script>
+```
+
+* However, let's link the file (snake.js) into the HTML file to keep things neat and tidy, as below:
+```
+<script type="text/javascript" src="snake.js">
+</script>
+```
+
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
