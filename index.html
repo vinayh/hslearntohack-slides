@@ -25,7 +25,8 @@ class: center, middle
 
 ---
 
-## HyperText Markup Language
+## What is HTML?
+* HyperText Markup Language
 * Markup language - a way of annotating a document so that it is distinguishable from text  
  (eg. marking up paper documents)
 * Most recent version is HTML5  
@@ -62,9 +63,61 @@ class: center, middle
 </canvas>
 ```
 
+
 ---
 
-## JavaScript in HTML
+# Learning JavaScript
+
+---
+
+## What is JavaScript?
+* The most popular programming language on the web!
+* Used to change what displays on a website by modifying HTML content
+* Can also add functionality such as validating data (eg. email), etc.
+
+---
+
+## Basic programming concepts
+### Comparison operators
+* Comparison and logical operators return (are evaluated to) values of either true or false
+* For example, the equality operator `==` returns `true` if you type `5 == 4+1`
+* *Think about it:* Is this statement true or false?
+```(true == false)
+```
+* Try more examples with this operator at the [JavaScript tutorial site!][js_tutorial]
+
+---
+
+### Comparison operators (cont.)
+* Not equal to `!=`
+* Greater than `>`
+* Greater than or equal to `>=`
+* Less than `<`
+* Less than or equal to `<=`
+
+---
+
+### Logical operators
+* Can be used to combine other conditional statements (such as those we just learned)
+* For example, what if you want to do something only if two different equality operators both evaluate to true?
+* Use the and operator `&&` which returns `true` if both sides are true
+* For example, enclosing statements in parentheses to maintain order of operations: `((5 == 4+1) && (8 == 8))` is true
+* *Think about it:* Is this statement true or false?
+```((8 == 8) && (5 == 6-2))
+```
+
+---
+
+### Logical operators (cont.)
+* Or operator `||` evalutes to true if one or both of the statements are true
+* Not operator `!` takes one statement as input, evalutes to true if the statement is not true, or false
+
+---
+
+# JavaScript in HTML
+
+---
+
 * JavaScript is a programming language for the web, used to program the behavior of the web
 * The `<script>` tag is used to denote client-side (runs in your browser) JavaScript
 
@@ -80,6 +133,8 @@ class: center, middle
 <script type="text/javascript" src="snake.js">
 </script>
 ```
+
+[js_tutorial]
 
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
