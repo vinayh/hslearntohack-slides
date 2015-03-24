@@ -38,8 +38,7 @@ class: center, middle
 ---
 
 ## Try this example in a text editor!
-```
-<!DOCTYPE html> - Tells your browser what type of file to expect
+```<!DOCTYPE html> - Tells your browser what type of file to expect
 <html> - Marks the start of the HTML
 <head> - Starts the header of the document
     <title>Your Page Title</title> - Sets the title (displayed in browser)
@@ -58,22 +57,47 @@ class: center, middle
 * The tag is a container, or placeholder, for graphics that are drawn using your JavaScript code
 
 * An example is as follows:
-```
-<canvas id="gameboard" style="border:1px solid #000000;">
+```<canvas id="gameboard" style="border:1px solid #000000;">
 </canvas>
 ```
-
+---
+# Learning JavaScript
 
 ---
 
-# Basic programming concepts
+## What is JavaScript?
+* The most popular programming language on the web!
+* Used to change what displays on a website by modifying HTML content
+* Can also add functionality such as validating data (eg. email), etc.
 
+---
+
+# JavaScript in HTML
+
+---
+
+* JavaScript is a programming language for the web, used to program the behavior of the web
+* The `<script>` tag is used to denote client-side (runs in your browser) JavaScript
+
+* We can type the code within the `<script>` tags, as below:
+```<script>
+\\ YOUR CODE HERE
+</script>
+```
+
+* However, let's link the file (snake.js) into the HTML file to keep things neat and tidy, as below:
+```<script type="text/javascript" src="snake.js">
+</script>
+```
+---
+
+# Basic programming concepts
 ---
 
 ## Comparison operators
 * Comparison and logical operators return (are evaluated to) values of either true or false
 * For example, the equality operator `==` returns `true` if you type `5 == 4+1`
-* *Think about it:* Is this statement true or false?
+* **Think about it:** Is this statement true or false?
 ```(true == false)
 ```
 * Try more examples with this operator at the [JavaScript tutorial site!][js_tutorial]
@@ -94,50 +118,19 @@ class: center, middle
 * For example, what if you want to do something only if two different equality operators both evaluate to true?
 * Use the and operator `&&` which returns `true` if both sides are true
 * For example, enclosing statements in parentheses to maintain order of operations: `((5 == 4+1) && (8 == 8))` is true
-* *Think about it:* Is this statement true or false?
+* **Think about it:** Is this statement true or false?
 ```((8 == 8) && (5 == 6-2))
 ```
-
----
-
-## Logical operators (cont.)
 * Or operator `||` evalutes to true if one or both of the statements are true
 * Not operator `!` takes one statement as input, evalutes to true if the statement is not true, or false
-
 ---
 
-# Learning JavaScript
-
----
-
-## What is JavaScript?
-* The most popular programming language on the web!
-* Used to change what displays on a website by modifying HTML content
-* Can also add functionality such as validating data (eg. email), etc.
-
----
-
-# JavaScript in HTML
-
----
-
-* JavaScript is a programming language for the web, used to program the behavior of the web
-* The `<script>` tag is used to denote client-side (runs in your browser) JavaScript
-
-* We can type the code within the `<script>` tags, as below:
+## Conditional statements
+* The `if` operator tests whether a condition is true, and runs some more code if it is
+*  **Think about it:** Will the code inside the `if` statement run in this case?
+```if (4 == 3 + 1)
+    alert("This is an alert, which creates a popup window in your browser!);
 ```
-<script>
-\\ YOUR CODE HERE
-</script>
-```
-
-* However, let's link the file (snake.js) into the HTML file to keep things neat and tidy, as below:
-```
-<script type="text/javascript" src="snake.js">
-</script>
-```
-
-[js_tutorial]
 
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
