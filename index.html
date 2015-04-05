@@ -14,6 +14,8 @@
         font-weight: normal;
       }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+      .red { color: red; }
     </style>
   </head>
   <body>
@@ -21,7 +23,33 @@
 
 class: center, middle
 
+# Welcome to HSLearnToHack!
+We hope you're excited!  
+Cause if you're not...  
+you will be!
+
+* .red[Insert a logo here]
+
+---
+
+# Introduction
+(Insert information about who we are, why we're doing this, and other stuff)
+
+---
+
+## Let's look at the big picture of this project
+* What will you be making?
+  * Snake (best game ever!)
+* What will you learn?
+  * Basics of HTML to create webpages  
+  * JavaScript to create the actual game
+
+---
+
+class: center, middle
+
 # Let's talk about HTML
+The backbone of websites!
 
 ---
 
@@ -52,10 +80,17 @@ class: center, middle
 ```
 
 ---
+## Test it out!
+* Save the file to an easy-to-access location with the extension `html`  
+  (eg. `MyPage.html`)
+* Open it in your favorite browser, either by double-clicking on the file or using `File -> Open` from inside the browser
+* See the result of your work!
+
+---
 
 ## The `<canvas>` tag
-* To draw the snake game in the HTML file, we will need to use a `<canvas>` tag
-* The tag is a container, or placeholder, for graphics that are drawn using your JavaScript code
+* To draw the snake game in the page, we will need to use a `<canvas>` tag
+* The `<canvas>` tag is a container, or placeholder, for graphics that are drawn using your JavaScript code
 
 * An example is as follows:
 ```
@@ -66,14 +101,18 @@ class: center, middle
 
 ---
 
+class: center, middle
+
 # Learning JavaScript
+This is where things get fun!
 
 ---
 
 ## What is JavaScript?
 * The most popular programming language on the web!
-* Used to change what displays on a website by modifying HTML content
+* Used to change what displays on a website by modifying content
 * Can also add functionality such as validating data (eg. email), etc.
+* Essentially, it serves to add behaviors to a website
 
 ---
 
@@ -81,8 +120,7 @@ class: center, middle
 * Comparison and logical operators return (are evaluated to) values of either true or false
 * For example, the equality operator `==` returns `true` if you type `5 == 4+1`
 * *Think about it:* Is this statement true or false?
-```(true == false)
-```
+>`(true == false)`
 * Try more examples with this operator at the JavaScript tutorial site!
 
 ---
@@ -100,14 +138,14 @@ class: center, middle
 * Can be used to combine other conditional statements (such as those we just learned)
 * For example, what if you want to do something only if two different equality operators both evaluate to true?
 * Use the and operator `&&` which returns `true` if both sides are true
-* For example, enclosing statements in parentheses to maintain order of operations: `((5 == 4+1) && (8 == 8))` is true
-* *Think about it:* Is this statement true or false?
-```((8 == 8) && (5 == 6-2))
-```
+* An example of enclosing statements in parentheses to maintain order of operations:
+>`((5 == 4 + 1) && (8 == 8))` is true
 
 ---
-
 ## Logical operators (cont.)
+
+* *Think about it:* Is this statement true or false?
+>`((8 == 8) && (5 == 6 - 2))`
 * Or operator `||` evalutes to true if one or both of the statements are true
 * Not operator `!` takes one statement as input, evalutes to true if the statement is not true, or false
 
@@ -115,24 +153,39 @@ class: center, middle
 
 ## Variables
 * A variable is a way to refer to a value, similar to variables in math
-```var x = 5
-```
+* Here is an example of creating a variable, named `x`:
+>`var x;`
+* We can set it equal to a value, in this case `5`, upon creation:
+>`var x = 5`
 * Now when you access the variable `x`, you can use the value `5`
-* `alert(x);` results in a popup box with 5
+>`alert(x);`  
+* This code results in a popup box (using the `alert()` function) with 5 as the message
 
 ---
+
+## Variables (cont.)
+* You can also create a variable using the value of another variable
+* *Think about it:* What is the variable `y` equal to after these two lines are executed?
+>`var x = 5;`  
+>`var y = x + x;`
+
+
+---
+
+class: center, middle
 
 # JavaScript in HTML
+Let's find out how to fit our newfound JavaScript knowledge with HTML!
 
 ---
 
-* JavaScript is a programming language for the web, used to program the behavior of the web
+## The `<script>` tag
 * The `<script>` tag is used to denote client-side (runs in your browser) JavaScript
 
-* We can type the code within the `<script>` tags, as below:
+* We can type the JavaScript code within the `<script>` tags, as below:
 ```
 <script>
-\\ YOUR CODE HERE
+YOUR JAVASCRIPT HERE
 </script>
 ```
 
@@ -141,8 +194,6 @@ class: center, middle
 <script type="text/javascript" src="snake.js">
 </script>
 ```
-
-[js_tutorial]
 
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
