@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Learning HTML and JavaScript</title>
+    <title>HTML and JavaScript - HSLearnToHack</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <style type="text/css">
       @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
@@ -62,7 +62,7 @@ The backbone of websites!
 
 ---
 
-### Fundamental HTML syntax for structuring a page
+## Fundamental HTML syntax for structuring a page
 * What is syntax? - a set of rules for the ordering of words to make them meaningful
 
 >`<!DOCTYPE html>` -  Tells your browser what type of file to expect  
@@ -71,7 +71,7 @@ The backbone of websites!
 
 >`<head>` - Starts the header of the document  
 
->`<title>YOUR TITLE</title>` -  - Sets the title (displayed in browser)  
+>`<title>YOUR TITLE</title>` - Sets the title (displayed in browser)  
 
 >`<body>` - Marks the beginning of the body of the document
 
@@ -98,6 +98,38 @@ The backbone of websites!
 * See the result of your work!
 
 ---
+## Making a form
+* Why do we need a form for a Snake game?
+* Let's go through the code, line by line
+
+>`<form id="selection">`  
+Marks the start of the form, with the ID attribute "selection"
+
+>`<input type="radio" id="easy" name="selection">Easy`  
+Creates a radio button, with the given ID/name that is labeled "Easy"
+
+>`<input type="radio" id="intermediate" name="selection" checked>Intermediate`  
+Another radio button for "Intermediate", checked by default
+
+>`<input type="radio" id="difficult" name="selection">Difficult`  
+One last button for a "Difficult" setting
+
+>`</form>`  
+Marks the end of the form
+
+---
+
+## The form code
+```
+<form id="selection">
+    <input type="radio" id="easy" name="selection">Easy
+    <input type="radio" id="intermediate" name="selection" checked>
+    Intermediate
+    <input type="radio" id="difficult" name="selection">Difficult
+</form>
+```
+
+---
 
 ## The `<canvas>` tag
 * To draw the snake game in the page, we will need to use a `<canvas>` tag
@@ -108,7 +140,6 @@ The backbone of websites!
 <canvas id="gameboard" style="border:1px solid #000000;">
 </canvas>
 ```
-
 
 ---
 
@@ -154,7 +185,6 @@ This is where things get fun!
 
 ---
 ## Logical operators (cont.)
-
 * *Think about it:* Is this statement true or false?
 >`((8 == 8) && (5 == 6 - 2))`
 * Or operator `||` evalutes to true if one or both of the statements are true
@@ -166,11 +196,13 @@ This is where things get fun!
 * A variable is a way to refer to a value, similar to variables in math
 * Here is an example of creating a variable, named `x`:
 >`var x;`
-* We can set it equal to a value, in this case `5`, upon creation:
->`var x = 5`
-* Now when you access the variable `x`, you can use the value `5`
->`alert(x);`  
-* This code results in a popup box (using the `alert()` function) with 5 as the message
+* Let's set the value of `x` to 5:
+>`x = 5`
+* We can alternatively make a variable and set it to a value in one step:
+>`var y = 7`
+* Now when you access the variable `y`, you will be accessing the value `7`
+>`alert(y);`
+* This code results in a popup box (using the `alert()` function) with 7 as the message
 
 ---
 
@@ -180,6 +212,21 @@ This is where things get fun!
 >`var x = 5;`  
 >`var y = x + x;`
 
+---
+
+## Review
+* What is the output of this code?
+```
+var a;
+if (5 == 3 + 2)
+    a = 3;
+else
+    a = 6;
+var y = a * 3;
+if ((y > x) && (a < 4))
+    y = 10;
+alert(y);
+```
 
 ---
 
@@ -200,7 +247,8 @@ YOUR JAVASCRIPT HERE
 </script>
 ```
 
-* However, let's link the file (snake.js) into the HTML file to keep things neat and tidy, as below:
+* However, let's make a new file that will hold our Snake code, called `snake.js`
+* Now, link it into your existing HTML file to keep things neat and tidy, as below:
 ```
 <script type="text/javascript" src="snake.js">
 </script>
