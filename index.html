@@ -1,3 +1,11 @@
+<!--
+  TODO:
+  - CSS after HTML slides
+  - Other data types for JavaScript
+  - Use alert with a literal before using it with a variable
+  - if/else statements
+-->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -143,6 +151,26 @@ Marks the end of the form
 
 ---
 
+## JavaScript in HTML
+* We can fit JavaScript code in an HTML file using the `<script>` tag
+* The `<script>` tag is used to denote client-side (runs in your browser) JavaScript
+* We can type the JavaScript code within the `<script>` tags, as below:
+
+```
+<script>
+YOUR JAVASCRIPT HERE
+</script>
+```
+
+* However, let's make a new file that will hold our Snake code, called `snake.js`
+* Now, link it into your existing HTML file to keep things neat and tidy, as below:
+```
+<script type="text/javascript" src="snake.js">
+</script>
+```
+
+---
+
 class: center, middle
 
 # Learning JavaScript
@@ -159,7 +187,7 @@ This is where things get fun!
 ---
 
 ## Comparison operators
-* Comparison and logical operators return (are evaluated to) values of either true or false
+* Comparison and logical operators return (are evaluated to) values of either true or false (Boolean)
 * For example, the equality operator `==` returns `true` if you type `5 == 4+1`
 * *Think about it:* Is this statement true or false?
 >`(true == false)`
@@ -179,16 +207,46 @@ This is where things get fun!
 ## Logical operators
 * Can be used to combine other conditional statements (such as those we just learned)
 * For example, what if you want to do something only if two different equality operators both evaluate to true?
-* Use the and operator `&&` which returns `true` if both sides are true
-* An example of enclosing statements in parentheses to maintain order of operations:
->`((5 == 4 + 1) && (8 == 8))` is true
+* Use the `and` operator `&&`  
+>Returns `true` if both sides are true
+* Statements can be enclosed in parentheses to maintain order of operations
+* *Think about it:* Is this statement true or false?  
+>`((5 == 4 + 1) && (8 == 8))`
 
 ---
 ## Logical operators (cont.)
 * *Think about it:* Is this statement true or false?
 >`((8 == 8) && (5 == 6 - 2))`
-* Or operator `||` evalutes to true if one or both of the statements are true
-* Not operator `!` takes one statement as input, evalutes to true if the statement is not true, or false
+* Or operator `||`  
+>Evalutes to true if one or both of the statements are true
+* Not operator `!`  
+>Takes one statement as input, evalutes to true if the statement is not true, or false
+
+---
+
+## Conditional statements
+* How do we use Boolean statements to change what happens in our code?
+* *Think about it:* Why is this important?
+
+---
+
+## Conditional statements
+* How do we use Boolean statements to change what happens in our code?
+* *Think about it:* Why is this important?
+* We can control what parts of our code runs based on true/false values using `if/else` statements
+* Keep in mind:* The `alert()` function displays a popup box with the provided message
+* Let's go over the following code  
+```
+if (hour < 12) {
+      alert("Good morning!");
+}
+else if (hour < 18) {
+      alert("Good afaternon!");
+}
+else {
+      alert("Good night!");
+}
+```
 
 ---
 
@@ -214,44 +272,26 @@ This is where things get fun!
 
 ---
 
+## Arrays
+* An array allows for the grouping of multiple variables with indexes
+* Each element in an array can be accessed by a unique index
+* Let's create an array with four integers
+>`var numbers = [3, 1, 2];`
+
+---
+
 ## Review
 * What is the output of this code?
 ```
 var a;
 if (5 == 3 + 2)
-    a = 3;
+      a = 3;
 else
-    a = 6;
+      a = 6;
 var y = a * 3;
 if ((y > x) && (a < 4))
-    y = 10;
+      y = 10;
 alert(y);
-```
-
----
-
-class: center, middle
-
-# JavaScript in HTML
-Let's find out how to fit our newfound JavaScript knowledge with HTML!
-
----
-
-## The `<script>` tag
-* The `<script>` tag is used to denote client-side (runs in your browser) JavaScript
-
-* We can type the JavaScript code within the `<script>` tags, as below:
-```
-<script>
-YOUR JAVASCRIPT HERE
-</script>
-```
-
-* However, let's make a new file that will hold our Snake code, called `snake.js`
-* Now, link it into your existing HTML file to keep things neat and tidy, as below:
-```
-<script type="text/javascript" src="snake.js">
-</script>
 ```
 
     </textarea>
