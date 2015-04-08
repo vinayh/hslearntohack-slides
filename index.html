@@ -155,7 +155,6 @@ Marks the end of the form
 * We can fit JavaScript code in an HTML file using the `<script>` tag
 * The `<script>` tag is used to denote client-side (runs in your browser) JavaScript
 * We can type the JavaScript code within the `<script>` tags, as below:
-
 ```
 <script>
 YOUR JAVASCRIPT HERE
@@ -191,6 +190,15 @@ This is where things get fun!
 * For example, the equality operator `==` returns `true` if you type `5 == 4+1`
 * *Think about it:* Is this statement true or false?
 >`(true == false)`
+
+---
+
+## Comparison operators
+* Comparison and logical operators return (are evaluated to) values of either true or false (Boolean)
+* For example, the equality operator `==` returns `true` if you type `5 == 4+1`
+* *Think about it:* Is this statement true or false?
+>`(true == false)`  
+>It is .red[false]!
 * Try more examples with this operator at the JavaScript tutorial site!
 
 ---
@@ -214,9 +222,27 @@ This is where things get fun!
 >`((5 == 4 + 1) && (8 == 8))`
 
 ---
+
+## Logical operators
+* Can be used to combine other conditional statements (such as those we just learned)
+* For example, what if you want to do something only if two different equality operators both evaluate to true?
+* Use the `and` operator `&&`  
+>Returns `true` if both sides are true
+* Statements can be enclosed in parentheses to maintain order of operations
+* *Think about it:* Is this statement true or false?  
+>`((5 == 4 + 1) && (8 == 8))`  
+>It is .red[true]!
+
+---
 ## Logical operators (cont.)
 * *Think about it:* Is this statement true or false?
 >`((8 == 8) && (5 == 6 - 2))`
+
+---
+## Logical operators (cont.)
+* *Think about it:* Is this statement true or false?
+>`((8 == 8) && (5 == 6 - 2))`  
+>It is .red[true]!
 * Or operator `||`  
 >Evalutes to true if one or both of the statements are true
 * Not operator `!`  
@@ -233,7 +259,7 @@ This is where things get fun!
 ## Conditional statements
 * How do we use Boolean statements to change what happens in our code?
 * *Think about it:* Why is this important?
-* We can control what parts of our code runs based on true/false values using `if/else` statements
+* We can control what parts of our code run based on true/false values using `if/else` statements
 * Keep in mind:* The `alert()` function displays a popup box with the provided message
 * Let's go over the following code  
 ```
@@ -269,6 +295,15 @@ else {
 * *Think about it:* What is the variable `y` equal to after these two lines are executed?
 >`var x = 5;`  
 >`var y = x + x;`
+
+---
+
+## Variables (cont.)
+* You can also create a variable using the value of another variable
+* *Think about it:* What is the variable `y` equal to after these two lines are executed?
+>`var x = 5;`  
+>`var y = x + x;`  
+>`y` is now equal to .red[10]!
 
 ---
 
